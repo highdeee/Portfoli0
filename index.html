@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width intial-scale=1.0">
+        <title>Hassan quadr idowu portfolio</title>
+          <link
+             rel="stylesheet"
+             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            >
+
+        <style>
+            :root{
+                --bg-color: #0f172a;
+                --card-big:#1e293b;
+                --text-main: #f8fafc;
+                --taxt-muted: #94a3b8;
+                --accent: #38bdf8;
+            }
+            *{
+                 padding:0px;
+                 margin:0px;
+                 box-sizing:border-box;
+                 text-decoration:none;
+                 text-decoration:none;
+                 outline:none;
+                 border:none;
+                 transition:all 0.5s ease;
+                 margin: 0rem;
+                 padding:0rem;
+            }
+            .header_info{
+                display:flex;
+                justify-content:space-between;
+                background-color:var(--card-big);
+                color:var(--text-main);
+                width:100%;
+                padding:1rem;
+                box-sizing: border-box;
+                position:fixed;
+                top:0; left:0; right:0;
+                z-index:1000;
+    
+            }
+            
+            .header_info p{
+                padding:6px 0rem;
+            }
+            .header_info span{
+                color:var(--accent);
+            }
+            .menu_bar{
+                display:flex;
+                list-style: none;
+                gap:1.5rem;
+            }
+            .menu_bar a{
+                text-decoration:none;
+                color:var(--text-main);
+            }
+            .menu_bar a:hover{
+                color:var(--accent);
+                text-align:center;
+                margin:0 auto;
+                padding:5rem 1rem;
+        
+            }
+            body{
+                background-color:var(--bg-color);
+                color:var(--text-main);
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        
+            .home_body .about{
+                margin-bottom:2rem;
+                margin-left:1rem;
+                padding:.5rem;
+                border-radius:2rem;
+                border:2px solid #38bdf8;
+                display:inline-block;
+    
+            }
+            
+            .home_about{
+                display:flex;
+                justify-content: center;
+                gap:1rem;
+
+            }
+            .home_about span{
+                color:var(--accent);
+            }
+            .about_details{
+                text-align:center;
+                padding:0 10rem 0 10rem;
+                
+            }
+            .about p span{
+                color:var(--accent);
+            }
+            .home_body{
+               padding:4rem 9%;
+
+            }
+            .home_link{
+               display:flex;
+               justify-content:center;
+               margin:2rem 0;
+               gap:1rem;
+        
+            }
+            .project_btn{
+                text-decoration:none;
+                color:var(--text-main);
+                padding:1rem;
+                border:2px solid #38bdf8;
+                border-radius:2rem;
+            }
+            .contact_btn{
+                text-decoration:none;
+                color:var(--text-main);
+                padding:1rem;
+                border:2px solid #38bdf8;
+                border-radius:2rem;
+            
+
+            }
+            .download_btn{
+                text-decoration:none;
+                color:var(--text-main);
+                padding:1rem;
+                border:2px solid #38bdf8;
+                border-radius:2rem;
+            }
+            .skills p{
+                display:inline-block;
+                padding:.5rem;
+                border-radius:2rem;
+                border:2px solid #38bdf8;
+                margin-bottom:2rem;
+                margin-left:1.5rem;
+
+            }
+            .Skill{
+                padding:4rem 9% 4rem 9%;
+            }
+            .skills p span{
+                color:var(--accent);
+            }
+            .skills_details{
+                display:flex;
+                justify-content:space-between;
+                margin-bottom: 2rem;
+            }
+        
+            .programming span{
+                color:#38bdf8;
+            }
+            .Contacts{
+                padding:0.5rem;
+                margin-left:1rem;
+                border-radius:2rem;
+                border:2px solid #38bdf8;
+                display:inline-block;
+                margin-bottom:1rem;
+            }
+            .Contacts span{
+                color:#38bdf8
+            }
+            .contact_details {
+               margin-left:30rem;
+            }
+            .contact_details span{
+                color:#38bdf8;
+            }
+            .number_btn{
+                margin-left:10rem;
+                margin-bottom:1rem;
+            }
+            .number_btn .number_color{
+                color:var(--text-main);
+            }
+            .Contact p span{
+                color:#38bdf8;
+        
+            }
+            .email_btn{
+                margin-left:10rem;
+                margin-bottom:1rem;
+            }
+            .email_btn .email_color{
+                color:var(--text-main);
+            }
+            .Contact a{
+                color:var(--text-main)
+
+            }
+            .linkedin_btn{
+                margin-left:10rem;
+               
+            }
+            .linkedin_btn .linkedin_color{
+                color:var(--text-main);
+            }
+            .Contact{
+                background-color:var(--card-big);
+                padding:4rem 9%;
+            }
+            .bottom{
+                background-color:var(--bg-color);
+            }
+            .bottom_btn{
+                display:flex;
+                justify-content: space-between;
+                padding-left:3rem;
+                padding-right:3rem;
+                padding-top:1rem;
+                padding-bottom:1rem;
+            }
+            .bottom_top a{
+                color:var(--text-main);
+                text-decoration: none;
+            }
+            .bottom_linkedin a{
+                color:var(--text-main);
+                text-decoration: none;
+            }
+            .homes{
+                display:flex;
+                justify-content: center;
+                text-align:center;
+                margin-top:2rem;
+                gap: 1rem;
+                padding:4rem 9% 1rem 9%;
+            }
+            .home_details span{
+                color:var(--accent);
+            }
+            .btn{
+                padding:0.5rem;
+                border:2px solid #38bdf8;
+                border-radius:2rem;
+                margin-bottom:0.5rem;
+            }
+            .home .image{
+                margin-top:2rem;
+                margin-left:1rem;
+                padding:3rem;
+                border:2px solid #38bdf8;
+                border-radius:5rem;
+                background-color: var(--card-big);
+            
+            }
+           .social-icons {
+               display: flex;
+               gap: 20px;
+               align-items: center;
+            }
+
+           .Contact a i{
+               font-size: 30px;
+               text-decoration: none;
+               transition: transform 0.3s ease;
+            }
+
+            .Contact a i:hover {
+               transform: scale(1.2);
+            }
+
+            .number_btn .whatsapp i {
+                 color: #25D366;
+                 margin-left:0.5rem;
+            }
+
+            .email_btn .email i{
+                color: #EA4335;
+                margin-left:0.5rem;
+             }
+            .linkedin_btn .linkedin i{
+                color:#0a66c2;
+                margin-left:0.5rem;
+            }
+            .projects_grid .product_details{
+                display:flex;
+                flex-wrap:wrap;
+                position:relative;
+                gap:1rem;
+            }
+            .projects_grid .product_details .box{
+                flex:1 25rem;
+                border-radius:1rem;
+                border:0.5px solid #38bdf8;
+            }
+            .project{
+                background-color: var(--card-big);
+                width:100%;
+                box-sizing: border-box;
+                padding:4rem 9%;
+            }
+
+            
+            .project h3 span{
+                color:var(--accent);
+            }
+            .project .title_project{
+                padding:0.5rem;
+                border-radius:2rem;
+                border:2px solid #38bdf8;
+                display:inline-block;
+                margin-bottom:1rem;
+            }
+            .box .image{
+                height:0%;
+                width:100%;
+                
+            }
+            .box .title_details p{
+                padding:1rem;
+            }
+            .box .title_details p span{
+                color:var(--accent);
+            }
+            .project .projects_grid .box_image{
+                padding:0 .5rem 0 .5rem;
+                max-width:100%;
+                height:auto;
+            }
+             .project .projects_grid .title_details .tool{
+                display:inline-block;
+                border-radius: 0.5rem;
+                border:0.5px solid #38bdf8;
+                margin:0 0 0 1rem;
+                padding:0.5rem;
+             }
+            .project .projects_grid .box h3{
+                text-align:center;
+                padding:.5rem 5px;
+            }
+            .bottom_btn span{
+                color:var(--accent);
+            }
+            .email span{
+                padding-left:1rem;
+            }
+            .whatsapp span{
+                padding-left:1rem;
+            }
+            .linkedin span{
+                padding-left:1rem;
+            }
+            
+            @media(max-width:890px){
+               .header_info {
+                    display:flex;
+                    flex-direction: column;
+                    align-items:center;
+                    gap:.5px;
+                    padding:10px .5px;
+                    width:100%;
+                    box-sizing: border-box;
+                
+                }
+                .number_btn{
+                    margin:0 5rem .5rem 1rem;
+                }
+                .email_btn{
+                    margin:0 2rem .5rem 1rem;
+        
+                }
+                .linkedin_btn{
+                    margin:0 2rem .5rem 1rem;
+                }
+                .contact_details{
+                    margin-left:3rem;
+                    margin-bottom:1rem;
+                }
+               
+                .skills_details{
+                  display:grid;
+                  padding-left:2rem;
+                }
+                .programming{
+                    margin:0rem;
+                    border:none;
+                }
+                .programming p{
+                    margin-bottom:10px;
+                    gap:10px;
+                }
+                .programming h3{
+                    padding-left:2rem
+                }
+                .Skill{
+                    padding:6rem 1% 0rem 1%;
+                }
+                
+                .home_body{
+                    padding:6rem 1% 0rem;;
+                    text-align:justify;
+                }
+                .project{
+                    padding-top:5.5rem;
+                }
+               .home_about{
+                display:grid;
+               }
+               .home_about h3{
+                text-align:center;
+               }
+               .home_about p{
+                padding:0 5px;
+               }
+               .about_details{
+                padding:0;
+                text-align:justify;
+               }
+               .Contact{
+                padding:3rem 0rem 2rem 0rem;
+               }
+               .home_link {
+                display:flex;
+                flex-wrap: wrap;
+                flex:1 20rem;
+                gap:1rem;
+                justify-content: center;
+                text-align:center;
+               }
+               .homes{
+                text-align:center;
+                justify-content: center;
+                gap:1px;
+                padding:6rem 5px 0rem 5px;
+               }.home .image h2{
+                position:relative;
+                top:12px;
+                
+               }
+               .bottom_btn{
+                display:flex;
+                padding:1rem;
+                gap:25px;
+               } .home .image{
+                margin-top:3rem;
+                border:2px solid #38bdf8;
+                border-radius:5rem;
+                background-color: var(--card-big);
+            
+            }
+           
+               .menu_bar a:hover{
+                color:var(--accent);
+                text-align:center;
+                margin:0 auto;
+                padding:1px;
+               }
+            }
+            @media(max-width:500px){
+                .home .image h2{
+                position:relative;
+                top:0px;
+                }
+
+            }
+            @media(max-width:1030px){
+                .Skill{
+                    padding:5rem 1% 0rem 1%;
+                }
+
+            }
+            @media(max-width:375px){
+                 .Skill{
+                    padding:6rem 1% 0rem 1%;
+                }
+                 .home .image h2{
+                position:relative;
+                top:10px;
+                }
+
+            }
+            
+      
+         
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="header_info"><div class="header_name">
+                       <p><strong>Hassan Abdulquadri </strong> |<span> Data analyst</span></p>
+                    </div>
+                    <div class="menu_bar">
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Skill">Skill</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="cv.pdf">Download CV</a></li>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- home section -->
+            <section class="home" id="Home">
+                <div class="homes">
+                    <div class="home_details">
+                        <P class="btn"><span>DATA ANALYST</span> PORTFOLIO</P>
+                        <h2>HASSAN<span><br> ABDULQUADRI</span><br> IDOWU</h2>
+                        <P>I help people finding <span>insights</span><br> through <span>data</span></P>
+                    </div>
+                    <div class="image">
+                        <h2>HAI</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="About" id="About">
+                <div class="home_body">
+                    <div class="about" id="About"><p><span>About </span> Me</p></div>
+                    <div class="about_details">
+                        <div class="home_about">
+                           <h3>Hello, I'm <span>Hassan Abdulquadri</span>!</h3>
+                           <p>Data Analyst with a prove track record in various analytical roles. Proficient in <span>SQL, Google sheet, Microsoft Excel, Tableau, and Power BI</span> for comprehensive data analysis and visualization. comfortable with end-to-end data analysis, data processing, dashboard / daily reporting creation, and presenting actionable insights with effective communication and engaging story-telling skills.</p>
+                        </div>
+                        <div class="home_link">
+                              <a href="#Contact" class="contact_btn">Contact Me</a>
+                              <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="download_btn">Download CV</a>
+                              <a href="#Projects" class="project_btn">Explore My Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- projects section-->
+            <section class="project" id="Projects">
+                <h3 class="title_project"><span>Featured</span> Projects</h3>
+                <div class="projects_grid">
+                    <div class="product_details">
+                        <div class="box">
+                               <h3> USA COCA-COLA RETAILER SALES TRANSACTION</h3>
+                            <div class="box_image">
+                                <img class="image" src="COCA_COLA.png" alt="cocacola image">
+                            </div>
+                            <div class="title_details">
+                                <p>I analyzed a dataset covering over 9,600 transactions to evaluate brand performance, retailer operating profit, region sales transaction, top city transaction and top state transaction across differente year in USA  </p>
+                                <h3 class="tool"><span>Tools</span> used:</h3>
+                                <p><span>Excel,Power Query,Pivot Table,DAX</span></p>
+                            </div>
+                        </div>
+                        <div class="box">
+                               <h3> CALL CENTER PERFORMANCE</h3>
+                            <div class="box_image">
+                                <img class="image" src="CALLER CENTER.png" alt="cocacola image">
+                            </div>
+                            <div class="title_details">
+                                <p>I analyzed a dataset covering over 33,000 call record to evaluate service performance, reasons for calling, call saatisfaction, top state callers record, callers respond time, and callers channels.</p>
+                                <h3 class="tool"><span>Tools</span> used:</h3>
+                                <p><span>Excel,Power Query,Pivot Table,DAX</span></p>
+                            </div>
+                        </div>
+                        <div class="box">
+                               <h3>NORTHWIND COMMERCIAL SALES TRANSACTION</h3>
+                            <div class="box_image">
+                                <img class="image" src="MULTIPLE.png" alt="cocacola image">
+                            </div>
+                            <div class="title_details">
+                                <p>End-to-end sales insight across products, company name, category, shipping company, employee and profitable country.</p>
+                                <h3 class="tool"><span>Tools</span> used:</h3>
+                                <p><span>Excel,Power Query,Pivot Table,DAX</span></p>
+                            </div>
+                        </div>
+                        <div class="box">
+                               <h3>MEDICAL EQUIPMENT OVERVIEW </h3>
+                            <div class="box_image">
+                                <img class="image" src="medical equipment pic 1.png" alt="cocacola image">
+                            </div>
+                            <div class="title_details">
+                                <p>End-to-end analysis insight across different hospital equipment, number of equipment supplied by country and hospital equipment condition.</p>
+                                <h3 class="tool"><span>Tools</span> used:</h3>
+                                <p><span>Excel,Power Query,Pivot Table,DAX</span></p>
+                            </div>
+                        </div>
+                        <div class="box">
+                               <h3>MEDICAL EQUIPMENT EXPENSES </h3>
+                            <div class="box_image">
+                                <img class="image" src="medical equipment 2.png" alt="cocacola image">
+                            </div>
+                            <div class="title_details">
+                                <p>End-to-end analysis insight across different hospital expenses, top expensive equipment, top state that spend on equipment and cost of installation of equipment </p>
+                                <h3 class="tool"><span>Tools</span> used:</h3>
+                                <p><span>Excel,Power Query,Pivot Table,DAX</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <!--about section-->
+        
+
+        </section>
+        <!-- Skill section-->
+        <section class="Skill" id="Skill">
+            <div>
+                <div class="skills" id="Skills">
+                 <p><span>Technical</span> Skills</p>
+            </div>
+            <div class="skills_details">
+                <div class="programming">
+                    <h3>
+                         <span> programming </span>language
+                    </h3>
+                    <p>
+                       <li>SQL</li>
+                    </p>
+                </div>
+                <div class="programming">
+                    <h3> <span>Data Analytic</span> Tools
+                    </h3>
+                    <p>
+                       <li>Microsoft Excel</li>
+                       <li>Google Sheet</li>
+                    </p>
+                </div>
+                <div class="programming">
+                   <h3><span>Data Vistualization </span>Tools
+                   </h3>
+                   <p>
+                       <li>Tableau</li>
+                       <li>Power BI</li>
+                    </p>
+                </div>
+            </div>
+            </div>
+      
+        </section>
+        <!--Contact section-->
+        <section class="Contact" id="Contact">
+            <div class="Contacts"><span>Contact</span> info</div>
+            <div class="contact_details">
+                <h3>Let's <span> connect</span> and <span>work together!</span></h3>
+            </div>
+            <div class="number_btn">
+                <p>
+                    <a href="https://wa.me/2348149735750" class="whatsapp"><i class="fa-brands fa-whatsapp"></i><span class="number_color">+2348149735750</span> </a>
+                </p>
+            </div>
+            <div class="email_btn">
+                <p>
+                    <a href="mailto:hassanquadriidowu@gmail.com" class="email"> <i class="fa-solid fa-envelope"></i><span class="email_color">hassanquadriidowu@gmail.com</span></a>
+                </p>
+            </div>
+            <div class="linkedin_btn">
+                <p>
+                    <a href="https://www.linkedin.com/in/abdulquadri-hassan-a2191838b" class="linkedin"> <i class="fa-brands fa-linkedin"></i><span class="linkedin_color">https://www.linkedin.com/in/<span></span> </a>
+                    
+                </p>
+            </div>
+        </section>
+        <!--bottom-->
+        <section class="bottom">
+            <div class="bottom_btn">
+                <div class="bottom_name">
+                    <p><span>&copy; 2026</span> Hassan Abdulquadri!</p>
+                </div>
+                <div class="bottom_top">
+                    <a href="#Home">Move to top</a>
+                </div>
+            </div>
+
+        </section>
+    </body>
+</html>
